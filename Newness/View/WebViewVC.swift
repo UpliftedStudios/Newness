@@ -13,9 +13,14 @@ class WebViewVC: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
 
+    var songUrl = "\(url)57629.png"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = URL(string: songUrl)
+        let request = URLRequest(url: url!)
+        webView.load(request)
     
     }
 }

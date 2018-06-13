@@ -71,12 +71,13 @@ class MainVC: UIViewController  {
 extension MainVC: SongCellDelegate {
     
     func didTapViewBtn(url: String) {
-        
-        //let webVC = WebViewVC()
-        
+
         let url = URL(string: url)!
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true, completion: nil)
+    }
+    
+    func didTapAddBtn(songData: SongData) {
         
     }
 }

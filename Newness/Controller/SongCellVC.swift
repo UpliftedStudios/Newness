@@ -9,6 +9,7 @@ import UIKit
 
 protocol SongCellDelegate {
     func didTapViewBtn(url: String)
+    func didTapAddBtn(songData: SongData)
 }
 
 class SongCellVC: UITableViewCell {
@@ -16,6 +17,7 @@ class SongCellVC: UITableViewCell {
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var composerLbl: UILabel!
     
+    //var myListSongData: [SongData]
     var songTitle: SongData!
     var songComposer: SongData!
     var delegate: SongCellDelegate?
@@ -31,4 +33,9 @@ class SongCellVC: UITableViewCell {
     @IBAction func viewBtnTapped(_ sender: Any) {
         delegate?.didTapViewBtn(url: songTitle.url)
     }
+    
+    @IBAction func addBtnTapped(_ sender: Any) {
+        //delegate?.didTapAddBtn(songData: myListSongData)
+    }
+    
 }
