@@ -92,7 +92,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Library" id="R4h-xo-3bX"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="R4h-xo-3bX"/>
                     <navigationItem key="navigationItem" title="Spirit &amp; Song Library" id="cD4-zt-qyW"/>
                     <connections>
                         <outlet property="tableView" destination="Zyg-4V-zfy" id="fcY-Ay-T9T"/>
@@ -136,7 +136,7 @@
             </objects>
             <point key="canvasLocation" x="2489" y="134"/>
         </scene>
-        <!--Go to My Lists-->
+        <!--View Controller-->
         <scene sceneID="dQl-pZ-sV8">
             <objects>
                 <viewController id="v3F-dO-Keb" sceneMemberID="viewController">
@@ -148,25 +148,48 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="55" id="ClX-KT-2mu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myListCell" rowHeight="55" id="ClX-KT-2mu">
                                         <rect key="frame" x="0.0" y="28" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ClX-KT-2mu" id="ecd-dx-UAE">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g81-KS-tgB">
-                                                    <rect key="frame" x="15" y="11" width="345" height="33"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6R-oD-avF">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="33"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4E-Jh-ZkB">
+                                                    <rect key="frame" x="313" y="0.0" width="47" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="47" id="Y1T-aD-eWv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" title="View"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Composer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7A7-91-mLG">
+                                                    <rect key="frame" x="15" y="36" width="290" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="lMX-Zh-IwF"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="g81-KS-tgB" firstAttribute="top" secondItem="ecd-dx-UAE" secondAttribute="topMargin" id="l73-7R-xer"/>
-                                                <constraint firstItem="g81-KS-tgB" firstAttribute="bottom" secondItem="ecd-dx-UAE" secondAttribute="bottomMargin" id="lPP-1W-olQ"/>
-                                                <constraint firstItem="g81-KS-tgB" firstAttribute="leading" secondItem="ecd-dx-UAE" secondAttribute="leadingMargin" id="xzL-3n-s40"/>
-                                                <constraint firstItem="g81-KS-tgB" firstAttribute="trailing" secondItem="ecd-dx-UAE" secondAttribute="trailingMargin" id="yA6-yg-Ech"/>
+                                                <constraint firstItem="7A7-91-mLG" firstAttribute="leading" secondItem="x6R-oD-avF" secondAttribute="leading" id="Bo1-M4-wvo"/>
+                                                <constraint firstItem="b4E-Jh-ZkB" firstAttribute="leading" secondItem="7A7-91-mLG" secondAttribute="trailing" constant="8" symbolic="YES" id="EjG-Vl-u1M"/>
+                                                <constraint firstItem="b4E-Jh-ZkB" firstAttribute="leading" secondItem="x6R-oD-avF" secondAttribute="trailing" constant="8" symbolic="YES" id="JYq-PS-DLg"/>
+                                                <constraint firstItem="7A7-91-mLG" firstAttribute="top" secondItem="x6R-oD-avF" secondAttribute="bottom" constant="3" id="QkW-dx-gYd"/>
+                                                <constraint firstItem="7A7-91-mLG" firstAttribute="leading" secondItem="ecd-dx-UAE" secondAttribute="leadingMargin" constant="-1" id="ZBT-zh-vzW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="b4E-Jh-ZkB" secondAttribute="trailing" id="blM-Au-drp"/>
+                                                <constraint firstItem="b4E-Jh-ZkB" firstAttribute="top" secondItem="ecd-dx-UAE" secondAttribute="top" id="pm4-hj-Miw"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7A7-91-mLG" secondAttribute="bottom" constant="-10" id="q6r-J0-zIL"/>
+                                                <constraint firstItem="b4E-Jh-ZkB" firstAttribute="top" secondItem="x6R-oD-avF" secondAttribute="top" id="wa0-bS-Vun"/>
+                                                <constraint firstItem="b4E-Jh-ZkB" firstAttribute="bottom" secondItem="ecd-dx-UAE" secondAttribute="bottomMargin" id="xXQ-Ex-qxa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -182,7 +205,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="REq-hy-gMe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Go to My Lists" id="fZa-de-WUs"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="fZa-de-WUs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geM-A9-eUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,6 +236,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="e0s-7a-ux4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="hxg-qV-2nN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
