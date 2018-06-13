@@ -14,16 +14,21 @@ protocol SongCellDelegate {
 class SongCellVC: UITableViewCell {
 
     @IBOutlet weak var titleLbl: UILabel!
-
-    var songItem: SongData!
+    @IBOutlet weak var composerLbl: UILabel!
+    
+    var songTitle: SongData!
+    var songComposer: SongData!
     var delegate: SongCellDelegate?
     
-    func setTitle(title: SongData) {
-        songItem = title
+    func setDetails(title: SongData, composer: SongData) {
+        songTitle = title
+        songComposer = composer
+        
         titleLbl.text = title.title
+        composerLbl.text = composer.composer
     }
 
     @IBAction func viewBtnTapped(_ sender: Any) {
-        delegate?.didTapViewBtn(url: songItem.url)
+        delegate?.didTapViewBtn(url: songTitle.url)
     }
 }

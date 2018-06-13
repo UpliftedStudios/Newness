@@ -31,42 +31,52 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XB0-wX-7Xx">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="48"/>
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="36"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziY-8h-D36">
-                                                    <rect key="frame" x="320" y="12" width="34" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziY-8h-D36">
+                                                    <rect key="frame" x="313" y="0.0" width="47" height="37"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <state key="normal" title="View"/>
                                                     <connections>
                                                         <action selector="viewBtnTapped:" destination="7sp-TM-0uu" eventType="touchUpInside" id="Uvj-ru-pE8"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Composer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKm-yR-18m">
-                                                    <rect key="frame" x="15" y="44" width="290" height="15"/>
+                                                    <rect key="frame" x="15" y="33" width="290" height="26"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="15" id="MIY-h5-3oZ"/>
+                                                        <constraint firstAttribute="height" constant="26" id="MIY-h5-3oZ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDZ-wr-He7">
+                                                    <rect key="frame" x="313" y="33" width="47" height="26"/>
+                                                    <state key="normal" title="Add"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ziY-8h-D36" firstAttribute="top" secondItem="fI4-R5-2is" secondAttribute="topMargin" constant="1" id="A6n-ig-XHG"/>
+                                                <constraint firstItem="ziY-8h-D36" firstAttribute="top" secondItem="fI4-R5-2is" secondAttribute="topMargin" constant="-11" id="A6n-ig-XHG"/>
                                                 <constraint firstItem="WKm-yR-18m" firstAttribute="leading" secondItem="XB0-wX-7Xx" secondAttribute="leading" id="B5h-Fh-QbV"/>
                                                 <constraint firstItem="WKm-yR-18m" firstAttribute="trailing" secondItem="XB0-wX-7Xx" secondAttribute="trailing" id="BKb-Tp-WEX"/>
-                                                <constraint firstItem="XB0-wX-7Xx" firstAttribute="bottom" secondItem="fI4-R5-2is" secondAttribute="bottomMargin" constant="-11" id="D1f-Vh-45H"/>
+                                                <constraint firstItem="WKm-yR-18m" firstAttribute="top" secondItem="JDZ-wr-He7" secondAttribute="bottom" constant="-26" id="Cj1-W7-zn5"/>
+                                                <constraint firstItem="XB0-wX-7Xx" firstAttribute="bottom" secondItem="fI4-R5-2is" secondAttribute="bottomMargin" constant="-23" id="D1f-Vh-45H"/>
                                                 <constraint firstItem="WKm-yR-18m" firstAttribute="bottom" secondItem="fI4-R5-2is" secondAttribute="bottomMargin" id="Icl-ws-g74"/>
                                                 <constraint firstItem="XB0-wX-7Xx" firstAttribute="leading" secondItem="fI4-R5-2is" secondAttribute="leadingMargin" id="Jm8-S2-Yfd"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="XB0-wX-7Xx" secondAttribute="trailing" constant="55" id="LVG-q7-nuX"/>
                                                 <constraint firstItem="XB0-wX-7Xx" firstAttribute="top" secondItem="fI4-R5-2is" secondAttribute="topMargin" constant="-11" id="Xmm-aH-N5C"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ziY-8h-D36" secondAttribute="bottom" constant="17" id="oC1-Uc-uzD"/>
-                                                <constraint firstItem="ziY-8h-D36" firstAttribute="leading" secondItem="WKm-yR-18m" secondAttribute="trailing" constant="15" id="uHV-7N-gLF"/>
+                                                <constraint firstItem="ziY-8h-D36" firstAttribute="leading" secondItem="JDZ-wr-He7" secondAttribute="trailing" constant="-47" id="bEc-Ii-aQw"/>
+                                                <constraint firstItem="JDZ-wr-He7" firstAttribute="top" secondItem="ziY-8h-D36" secondAttribute="top" constant="33" id="dJT-kL-2Hm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ziY-8h-D36" secondAttribute="bottom" constant="22" id="oC1-Uc-uzD"/>
+                                                <constraint firstItem="ziY-8h-D36" firstAttribute="leading" secondItem="WKm-yR-18m" secondAttribute="trailing" constant="8" id="uHV-7N-gLF"/>
+                                                <constraint firstItem="JDZ-wr-He7" firstAttribute="leading" secondItem="XB0-wX-7Xx" secondAttribute="trailing" constant="8" id="wuY-7i-RkB"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="composerLbl" destination="WKm-yR-18m" id="dsX-Sj-OGQ"/>
                                             <outlet property="titleLbl" destination="XB0-wX-7Xx" id="O6M-yg-jOW"/>
                                         </connections>
                                     </tableViewCell>
