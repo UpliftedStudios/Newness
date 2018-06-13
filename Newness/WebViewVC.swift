@@ -13,11 +13,12 @@ class WebViewVC: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
     
-    var songUrl = String()
+    var songData = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: songUrl)
+        let url = URL(string: songData)
         let request = URLRequest(url: url!)
         
         webView.load(request)

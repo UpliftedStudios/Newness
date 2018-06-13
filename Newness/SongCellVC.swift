@@ -5,22 +5,25 @@
 //  Created by Marcus Hidalgo on 6/12/18.
 //  Copyright © 2018 Marcus Hidalgo. All rights reserved.
 //
-
 import UIKit
+
+protocol SongCellDelegate {
+    func didTapViewBtn(url: String)
+}
 
 class SongCellVC: UITableViewCell {
 
     @IBOutlet weak var titleLbl: UILabel!
+
+    var songItem: SongData!
+    var delegate: SongCellDelegate?
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func setTitle(title: SongData) {
+        songItem = title
+        titleLbl.text = title.title
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBAction func viewBtnTapped(_ sender: Any) {
+        delegate?.didTapViewBtn(url: songItem.url)
     }
-
 }
