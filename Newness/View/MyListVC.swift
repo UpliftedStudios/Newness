@@ -24,6 +24,7 @@ class MyListVC: UIViewController {
         myListTableView.delegate = self
         myListTableView.dataSource = self
         
+        
         print(myListSongArray.count)
 
     }

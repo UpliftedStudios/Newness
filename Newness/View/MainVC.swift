@@ -40,8 +40,6 @@ extension MainVC: SongCellDelegate {
         
         let songData = songData
         myListSongArray.append(songData)
-        let indexPath = IndexPath(row: myListSongArray.count - 1, section: 0)
-        
         print(songData.title)
         
     }

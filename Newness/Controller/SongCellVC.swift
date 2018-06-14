@@ -17,7 +17,6 @@ class SongCellVC: UITableViewCell {
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var composerLbl: UILabel!
     
-    //var myListSongData: [SongData]
     var songTitle: SongData!
     var songComposer: SongData!
     var delegate: SongCellDelegate?
