@@ -91,8 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				EDF25E4A20D05A4B005DC1AE /* MainVC.swift */,
-				EDF25E6120D05CDC005DC1AE /* WebViewVC.swift */,
 				ED3BF0F020D1C1DD0019A373 /* MyListVC.swift */,
+				EDF25E6120D05CDC005DC1AE /* WebViewVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

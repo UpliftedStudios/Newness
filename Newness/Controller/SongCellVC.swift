@@ -35,7 +35,7 @@ class SongCellVC: UITableViewCell {
     }
     
     @IBAction func addBtnTapped(_ sender: Any) {
-        //delegate?.didTapAddBtn(songData: myListSongData)
+        delegate?.didTapAddBtn(songData: songTitle)
     }
     
 }
