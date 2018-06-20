@@ -23,7 +23,6 @@ class MainVC: UIViewController  {
         
         tableView.delegate = self
         tableView.dataSource = self
-
     }
 }
 
@@ -41,6 +40,7 @@ extension MainVC: SongCellDelegate {
         let songData = songData
         myListSongArray.append(songData)
         print(songData.title)
+        print(myListSongArray.count)
         
     }
 }

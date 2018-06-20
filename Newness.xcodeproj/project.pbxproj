@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		ED3BF0EF20D1C1BA0019A373 /* MyListCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3BF0EE20D1C1BA0019A373 /* MyListCellVC.swift */; };
 		ED3BF0F120D1C1DD0019A373 /* MyListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3BF0F020D1C1DD0019A373 /* MyListVC.swift */; };
+		ED5166AD20D2DA74003CBDAE /* NavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5166AC20D2DA74003CBDAE /* NavVC.swift */; };
 		EDF25E4920D05A4B005DC1AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF25E4820D05A4B005DC1AE /* AppDelegate.swift */; };
 		EDF25E4B20D05A4B005DC1AE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF25E4A20D05A4B005DC1AE /* MainVC.swift */; };
 		EDF25E4E20D05A4B005DC1AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF25E4C20D05A4B005DC1AE /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		ED3BF0EE20D1C1BA0019A373 /* MyListCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListCellVC.swift; sourceTree = "<group>"; };
 		ED3BF0F020D1C1DD0019A373 /* MyListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListVC.swift; sourceTree = "<group>"; };
+		ED5166AC20D2DA74003CBDAE /* NavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavVC.swift; sourceTree = "<group>"; };
 		EDF25E4520D05A4B005DC1AE /* Newness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF25E4820D05A4B005DC1AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDF25E4A20D05A4B005DC1AE /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				EDF25E5F20D05B4E005DC1AE /* SongCellVC.swift */,
 				ED3BF0EE20D1C1BA0019A373 /* MyListCellVC.swift */,
+				ED5166AC20D2DA74003CBDAE /* NavVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5166AD20D2DA74003CBDAE /* NavVC.swift in Sources */,
 				ED3BF0EF20D1C1BA0019A373 /* MyListCellVC.swift in Sources */,
 				EDF25E5120D05A4B005DC1AE /* Newness.xcdatamodeld in Sources */,
 				EDF25E6020D05B4E005DC1AE /* SongCellVC.swift in Sources */,
