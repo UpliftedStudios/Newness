@@ -24,6 +24,11 @@ class MainVC: UIViewController  {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "Spirit & Song"
+    }
+    
 }
 
 extension MainVC: SongCellDelegate {
@@ -40,12 +45,8 @@ extension MainVC: SongCellDelegate {
         let songData = songData
         myListSongArray.append(songData)
         print(songData.title)
-        print(myListSongArray.count)
-        
     }
 }
-
-
 
 extension MainVC: UITableViewDelegate, UITableViewDataSource {
     
