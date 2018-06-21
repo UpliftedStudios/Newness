@@ -12,16 +12,17 @@ import SafariServices
 class MyListVC: UIViewController {
     
     @IBOutlet weak var myListTableView: UITableView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         myListTableView.delegate = self
         myListTableView.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        print("My list count \(myListSongArray.count)")
+        myListTableView.reloadData()
         self.navigationController?.navigationBar.topItem?.title = "Spirit & Song"
     }
 }
@@ -49,6 +50,7 @@ extension MyListVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("My list count \(myListSongArray.count)")
         return myListSongArray.count
     }
     
