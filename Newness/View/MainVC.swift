@@ -27,8 +27,16 @@ class MainVC: UIViewController  {
     
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.topItem?.title = "Spirit & Song"
+        
+        let leftBatBtn = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(MainVC.leftSideBarBtnTapped(_:)))
+        self.navigationItem.leftBarButtonItem = leftBatBtn
     }
     
+    @objc func leftSideBarBtnTapped(_ sender: UIBarButtonItem!) {
+        //let subscriptionVC = SubscriptionVC()
+        //present(subscriptionVC, animated: true, completion: nil)
+        print("button has been tapped")
+    }
 }
 
 extension MainVC: SongCellDelegate {
