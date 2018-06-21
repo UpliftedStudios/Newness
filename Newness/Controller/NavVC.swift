@@ -1,26 +1,19 @@
 //
-//  WebViewVC.swift
+//  NavVC.swift
 //  Newness
 //
-//  Created by Marcus Hidalgo on 6/12/18.
+//  Created by Marcus Hidalgo on 6/14/18.
 //  Copyright © 2018 Marcus Hidalgo. All rights reserved.
 //
 
 import UIKit
-import WebKit
 
-class WebViewVC: UIViewController {
+class NavVC: UINavigationController {
 
-    @IBOutlet weak var webView: WKWebView!
-    
-    var songUrl = String()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: songUrl)
-        let request = URLRequest(url: url!)
-        
-        webView.load(request)
+        self.title = "Spirit & Song"
 
     }
 
