@@ -12,9 +12,6 @@ class NavVC: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "Spirit & Song"
-
     }
 
     override func didReceiveMemoryWarning() {

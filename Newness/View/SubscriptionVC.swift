@@ -21,8 +21,7 @@ class SubscriptionVC: UIViewController {
     
     @IBAction func spiritAndSongBtnTapped(_ sender: Any) {
         
-        let navVC = MainVC()
+        //let MainVC = MainVC()
         
-        present(navVC, animated: true, completion: nil)
     }
 }
