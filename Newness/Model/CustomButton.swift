@@ -12,7 +12,7 @@ import UIKit
 class CustomBtn: UIButton {
     
     override func awakeFromNib() {
-        self.layer.cornerRadius = 10.0
+        self.layer.cornerRadius = 50.0
         self.clipsToBounds = true
     }
 }
