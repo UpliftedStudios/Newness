@@ -10,6 +10,7 @@
 		ED3BF0EF20D1C1BA0019A373 /* MyListCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3BF0EE20D1C1BA0019A373 /* MyListCellVC.swift */; };
 		ED3BF0F120D1C1DD0019A373 /* MyListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3BF0F020D1C1DD0019A373 /* MyListVC.swift */; };
 		ED5166AD20D2DA74003CBDAE /* NavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5166AC20D2DA74003CBDAE /* NavVC.swift */; };
+		ED64B95420E1600600525C26 /* example_2.json in Resources */ = {isa = PBXBuildFile; fileRef = ED64B95320E1600600525C26 /* example_2.json */; };
 		EDA8287B20DC17AB00B1A326 /* SubscriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8287A20DC17AB00B1A326 /* SubscriptionVC.swift */; };
 		EDA8287D20DC190800B1A326 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8287C20DC190800B1A326 /* CustomButton.swift */; };
 		EDF25E4920D05A4B005DC1AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF25E4820D05A4B005DC1AE /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		ED3BF0EE20D1C1BA0019A373 /* MyListCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListCellVC.swift; sourceTree = "<group>"; };
 		ED3BF0F020D1C1DD0019A373 /* MyListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListVC.swift; sourceTree = "<group>"; };
 		ED5166AC20D2DA74003CBDAE /* NavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavVC.swift; sourceTree = "<group>"; };
+		ED64B95320E1600600525C26 /* example_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example_2.json; sourceTree = "<group>"; };
 		EDA8287A20DC17AB00B1A326 /* SubscriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionVC.swift; sourceTree = "<group>"; };
 		EDA8287C20DC190800B1A326 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		EDF25E4520D05A4B005DC1AE /* Newness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newness.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 				EDF25E4C20D05A4B005DC1AE /* Main.storyboard */,
 				EDF25E5420D05A4C005DC1AE /* LaunchScreen.storyboard */,
 				EDF25E5220D05A4C005DC1AE /* Assets.xcassets */,
+				ED64B95320E1600600525C26 /* example_2.json */,
 			);
 			path = Newness;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				EDF25E5620D05A4C005DC1AE /* LaunchScreen.storyboard in Resources */,
 				EDF25E5320D05A4C005DC1AE /* Assets.xcassets in Resources */,
 				EDF25E4E20D05A4B005DC1AE /* Main.storyboard in Resources */,
+				ED64B95420E1600600525C26 /* example_2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@ class MainVC: UIViewController  {
 
     @IBOutlet weak var tableView: UITableView!
     
+    //var secondSongData: [SongData] = []
     var songData: [SongData] = []
     
     override func viewDidLoad() {
@@ -37,22 +38,32 @@ class MainVC: UIViewController  {
         //present(subscriptionVC, animated: true, completion: nil)
         print("button has been tapped")
     }
+    
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destination = segue.destination as? MyListVC {
+            destination.myListSongData = secondSongData
+        } else {
+            print("The data did not pass")
+        }
+    }*/
 }
 
 extension MainVC: SongCellDelegate {
     
     func didTapViewBtn(url: String) {
 
-        let url = URL(string: url)!
+        guard let url = URL(string: url) else {
+            print("Stopped at viewbtn")
+            return }
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true, completion: nil)
     }
     
     func didTapAddBtn(songData: SongData) {
         
-        let songData = songData
         myListSongArray.append(songData)
-        print(songData.title)
+        print(myListSongArray.count)
     }
 }
 

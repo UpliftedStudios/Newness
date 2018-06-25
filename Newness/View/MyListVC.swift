@@ -13,6 +13,7 @@ class MyListVC: UIViewController {
     
     @IBOutlet weak var myListTableView: UITableView!
     
+    //var myListSongData: [SongData] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,10 @@ extension MyListVC: MyListCellDelegate {
     
     func didTapViewBtn(url: String) {
         
-        let url = URL(string: url)!
+        guard let url = URL(string: url) else {
+            print("Did not load URL")
+            return
+        }
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true, completion: nil)
     }
@@ -50,7 +54,6 @@ extension MyListVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("My list count \(myListSongArray.count)")
         return myListSongArray.count
     }
     
