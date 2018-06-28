@@ -66,3 +66,12 @@ func createArray() -> [SongData] {
     return  songDatas
 }
 
+
+let currentDate = Date()
+let tomorrow = NSDate(timeIntervalSinceNow: 86400)
+let dateFormatter = DateFormatter()
+
+
+
+
+

@@ -16,7 +16,7 @@ class SubscriptionVC: UIViewController {
         super.viewDidLoad()
 
         
-        guard let path = Bundle.main.path(forResource: "example_2", ofType: "json") else { return }
+        guard let path = Bundle.main.path(forResource: "csvjson", ofType: "json") else { return }
         let url = URL(fileURLWithPath: path)
 
         do {
@@ -24,13 +24,19 @@ class SubscriptionVC: UIViewController {
             let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
             //print(json)
             
+            dateFormatter.dateFormat = "MMMM-dd"
+            let dateString = dateFormatter.string(from: currentDate)
+            print(dateString)
+            
             guard let array = json as? [String: Any] else { return }
             
-            guard let beerName = array["beer_name"] as? [String: String] else { return }
-            guard let brewery = beerName["brewery"] else { return }
-            print(brewery)
+            guard let date = array["\(dateString)"] as? [String: String] else { return }
+            guard let body = date["title"] else { return }
+            print(body)
             
-            SubLbl.text = brewery
+            
+
+            SubLbl.text = body
             
         } catch {
             print(error)
