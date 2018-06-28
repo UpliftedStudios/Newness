@@ -25,12 +25,14 @@ class SubscriptionVC: UIViewController {
             //print(json)
             
             dateFormatter.dateFormat = "MMMM-dd"
-            let dateString = dateFormatter.string(from: currentDate)
-            print(dateString)
+            let currentDateString = dateFormatter.string(from: currentDate)
+            let tomorrowDateString = dateFormatter.string(from: tomorrow)
+            print(currentDateString)
+            print(tomorrowDateString)
             
             guard let array = json as? [String: Any] else { return }
             
-            guard let date = array["\(dateString)"] as? [String: String] else { return }
+            guard let date = array["\(currentDateString)"] as? [String: String] else { return }
             guard let body = date["title"] else { return }
             print(body)
             

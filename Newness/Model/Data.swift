@@ -68,7 +68,8 @@ func createArray() -> [SongData] {
 
 
 let currentDate = Date()
-let tomorrow = NSDate(timeIntervalSinceNow: 86400)
+let tomorrow = Date(timeIntervalSinceNow: 86400)
+//let tomorrow = NSDate(timeIntervalSinceNow: 86400)
 let dateFormatter = DateFormatter()
 
 
